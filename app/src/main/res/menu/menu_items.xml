@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="Search"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+    <item
+        android:id="@+id/remind"
+        android:icon="@drawable/ic_notifications_white_24dp"
+        android:title="@string/all_reminder"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share_white_24dp"
+        android:title="@string/all_share"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/ic_delete_white_24dp"
+        android:title="@string/all_delete"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/save"
+        android:icon="@drawable/ic_check_circle_white_24dp"
+        android:title="@string/all_save"
+        app:showAsAction="ifRoom" />
+
+</menu>

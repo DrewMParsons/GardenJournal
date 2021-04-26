@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textView_item_card_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imageView_item_card_photo"
+            android:elevation="18dp"
+            android:text="@string/event_detail_title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"/>
+
+        <TextView
+            android:id="@+id/textView_item_card_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/imageView_item_card_photo"
+            android:layout_alignBottom="@id/imageView_item_card_photo"
+            android:layout_marginEnd="8dp"
+            android:elevation="18dp"
+            android:layout="@id/imageView_item_card_photo"
+            android:text="Date"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imageView_item_card_photo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/garden01"
+             />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

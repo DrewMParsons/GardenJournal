@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.lumpyslounge.gardenjournal.Controller.JournalListFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_item_list" >
+        <action
+            android:id="@+id/action_nav_home_to_journalDetailFragment"
+            app:destination="@id/journalDetailFragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fui_slide_in_right"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_journal"
+            app:destination="@id/nav_journal" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_journal"
+        android:name="com.lumpyslounge.gardenjournal.Controller.JournalAddFragment"
+        android:label="New Journal"
+        tools:layout="@layout/fragment_journal_add" />
+    <fragment
+        android:id="@+id/nav_plant"
+        android:name="com.lumpyslounge.gardenjournal.Controller.PlantListFragment"
+        android:label="Plants"
+        tools:layout="@layout/fragment_item_list" >
+        <action
+            android:id="@+id/action_nav_plant_to_plantAddFragment"
+            app:destination="@id/plantAddFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_nav_plant_to_plantDetailFragment"
+            app:destination="@id/plantDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_event"
+        android:name="com.lumpyslounge.gardenjournal.Controller.EventListFragment"
+        android:label="Events"
+        tools:layout="@layout/fragment_item_list">
+
+        <action
+            android:id="@+id/action_nav_event_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left" />
+        <action
+            android:id="@+id/action_nav_event_to_eventAddFragment"
+            app:destination="@id/eventAddFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_signout"
+        android:name="com.lumpyslounge.gardenjournal.Controller.SignOutFragment"
+        android:label="Sign Out"
+        tools:layout="@layout/fragment_sign_out"/>
+
+    <fragment
+        android:id="@+id/journalDetailFragment"
+        android:name="com.lumpyslounge.gardenjournal.Controller.JournalDetailFragment"
+        android:label="Journal Detail"
+        tools:layout="@layout/fragment_journal_detail" >
+
+        <action
+            android:id="@+id/action_journalDetailFragment_to_journalEditFragment"
+            app:destination="@id/journalEditFragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popEnterAnim="@anim/fui_slide_in_right"
+            app:popExitAnim="@anim/fui_slide_out_left"
+            app:popUpTo="@+id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/journalEditFragment"
+        android:name="com.lumpyslounge.gardenjournal.Controller.JournalEditFragment"
+        android:label="Edit Journal"
+        tools:layout="@layout/fragment_journal_edit"/>
+    <action android:id="@+id/action_global_nav_home" app:destination="@id/nav_home" />
+    <fragment
+        android:id="@+id/plantAddFragment"
+        android:name="com.lumpyslounge.gardenjournal.Controller.PlantAddFragment"
+        android:label="Add Plant"
+        tools:layout="@layout/fragment_plant_add" />
+    <action
+        android:id="@+id/action_global_nav_plant"
+        app:destination="@id/nav_plant"
+        app:launchSingleTop="false" />
+    <fragment
+        android:id="@+id/plantDetailFragment"
+        android:name="com.lumpyslounge.gardenjournal.Controller.PlantDetailFragment"
+        android:label="Plant Details"
+        tools:layout="@layout/fragment_plant_detail">
+        <action
+            android:id="@+id/action_plantDetailFragment_to_plantEditFragment"
+            app:destination="@id/plantEditFragment"
+            app:popUpTo="@+id/nav_plant"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/plantEditFragment"
+        android:name="com.lumpyslounge.gardenjournal.Controller.PlantEditFragment"
+        android:label="Edit Plant"
+        tools:layout="@layout/fragment_plant_edit" />
+    <action android:id="@+id/action_global_nav_event" app:destination="@id/nav_event" />
+    <fragment
+        android:id="@+id/eventDetailFragment"
+        android:name="com.lumpyslounge.gardenjournal.Controller.EventDetailFragment"
+        android:label="Event Details"
+        tools:layout="@layout/fragment_event_detail" >
+        <action
+            android:id="@+id/action_eventDetailFragment_to_eventEditFragment"
+            app:destination="@id/eventEditFragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popUpTo="@+id/nav_event" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventEditFragment"
+        android:name="com.lumpyslounge.gardenjournal.Controller.EventEditFragment"
+        android:label="Edit Event"
+        tools:layout="@layout/fragment_event_edit" />
+    <fragment
+        android:id="@+id/eventAddFragment"
+        android:name="com.lumpyslounge.gardenjournal.Controller.EventAddFragment"
+        android:label="Add Event"
+        tools:layout="@layout/fragment_event_add" />
+</navigation>

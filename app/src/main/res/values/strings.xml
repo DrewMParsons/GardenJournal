@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Garden Journal</string>
+    <string name="all_login">Login</string>
+    <string name="login_register">New Users Click Below</string>
+    <string name="all_register">Register</string>
+    <string name="all_password">password</string>
+    <string name="all_email">email</string>
+    <string name="login_title">Garden Journal</string>
+    <string name="register_hint">Enter Email and Password Below</string>
+    <string name="all_events">Events</string>
+    <string name="all_journal">Journal</string>
+    <string name="all_plants">Plants</string>
+    <string name="journalDetail_title">Title</string>
+    <string name="journalDetail_date">Date</string>
+    <string name="journalDetail_notes">Notes</string>
+    <string name="journalDetail_temp">Temp</string>
+    <string name="all_add_photo_button">Add Photo Button</string>
+    <string name="all_temperature">Temperature</string>
+    <string name="all_save">Save</string>
+    <string name="plant_detail_name">Name</string>
+    <string name="plant_detail_variety">Variety</string>
+    <string name="plant_detail_plant_date">Plant Date</string>
+    <string name="plant_detail_plant_notes">Plant Notes</string>
+    <string name="plant_add_edit_planted_on">Planted On:</string>
+    <string name="event_detail_title">Title</string>
+    <string name="event_detail_type">Type</string>
+    <string name="event_detail_date">Date</string>
+    <string name="event_detail_note">Note</string>
+    <string name="all_add">Add</string>
+    <string name="all_delete">Delete</string>
+    <string name="all_home">Home</string>
+    <string name="all_share">Share</string>
+    <string name="all_reminder">Reminder</string>
+    <string name="all_communicate">Communicate</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="all_contact_email">info@lumpyslounge.com</string>
+    <string name="all_username">username</string>
+    <string name="all_date_planted">Date Planted</string>
+    <string name="all_sign_out">Sign Out</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="all_system">System</string>
+
+</resources>

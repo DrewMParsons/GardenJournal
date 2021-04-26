@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_book_white_24dp"
+            android:title="@string/all_journal" />
+
+        <item
+            android:id="@+id/nav_plant"
+            android:icon="@drawable/ic_flower_white_24dp"
+            android:title="@string/all_plants" />
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_event_white_24dp"
+            android:title="@string/all_events" />
+    </group>
+
+    <item android:title="@string/all_system">
+        <menu>
+
+            <item
+                android:id="@+id/nav_signout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="@string/all_sign_out" />
+
+        </menu>
+    </item>
+
+</menu>

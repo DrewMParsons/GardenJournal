@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "276318427938",
+    "firebase_url": "https://garden-journal-89f60.firebaseio.com",
+    "project_id": "garden-journal-89f60",
+    "storage_bucket": "garden-journal-89f60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276318427938:android:4baa0791b3f9174cd2e37b",
+        "android_client_info": {
+          "package_name": "com.lumpyslounge.gardenjournal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276318427938-s5e7u759o0c731ud0nevrj1c5qbqunch.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lumpyslounge.gardenjournal",
+            "certificate_hash": "3d7df53119dadd59dfaab979a943d548ecb11092"
+          }
+        },
+        {
+          "client_id": "276318427938-injrng9q37hu5ps48tii7bq5kmqddi97.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWupMsc0MapZQrzSfDwQon6ENw-DLlNyw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276318427938-injrng9q37hu5ps48tii7bq5kmqddi97.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
